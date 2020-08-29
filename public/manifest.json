@@ -1,25 +1,26 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-  "icons": [
-    {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
-    }
+  "manifest_version": 2,
+  "short_name": "Notaroo",
+  "version": "1.0.0",
+  "name": "Notaroo: Notes in a browser",
+  "description": "A note taking app that allows you quickly create multimedia notes in a browser",
+  "author": [
+    "Adebola Adeniran",
+    "Aaron Rory Newbold",
+    "Sarah Chamorro",
+    "Bhram Dev"
   ],
+
+  "browser_action": { "default_popup": "index.html" },
+  "icons": {
+    "16": "logo512.png",
+    "192": "logo512.png",
+    "512": "logo512.png"
+  },
+
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "permissions": ["storage", "<all_urls>"]
 }
